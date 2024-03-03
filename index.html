@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CALCULATOR</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Calculator.webp">
+</head>
+
+<body>
+    <div class="calculator">
+        <div class="input"><input type="text" readonly></div>
+        <div class="calculator__buttons">
+            <button onClick="showdisplay('7')">7</button>
+            <button onClick="showdisplay('8')">8</button>
+            <button onClick="showdisplay('9')">9</button>
+            <button onClick="showdisplay('*')" class="arithmetic">x</button>
+            <button onClick="showdisplay('4')">4</button>
+            <button onClick="showdisplay('5')">5</button>
+            <button onClick="showdisplay('6')">6</button>
+            <button onClick="showdisplay('-')" class="arithmetic">-</button>
+            <button onClick="showdisplay('1')">1</button>
+            <button onClick="showdisplay('2')">2</button>
+            <button onClick="showdisplay('3')">3</button>
+            <button onClick="showdisplay('+')" class="arithmetic">+</button>
+            <button onClick="showdisplay('.')">.</button>
+            <button onClick="showdisplay('0')">0</button>
+            <button onClick="showdisplay('**')" class="arithmetic">^</button>
+            <button onClick="showdisplay('/')" class="arithmetic">/</button>
+            <button onClick="cleardisplay()" id="clear">CLEAR</button>
+            <button onClick="calculate('=')" id="evaluate">=</button>
+        </div>
+        <div class="calculator__buttons__manipulate">
+        </div>
+    </div>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
